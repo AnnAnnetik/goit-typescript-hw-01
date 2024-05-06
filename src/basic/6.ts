@@ -1,25 +1,27 @@
-// const mango = {
-//     name: 'Mango',
-//     age: 30,
-//     email: 'john@example.com',
-//     address: {
-//         city: 'New York',
-//         country: 'USA'
-//     }
-// };
+interface Address {
+  city: string;
+  country: string;
+}
 
-// const poly = {
-//     name: 'Mango',
-//     age: 30,
-//     email: 'john@example.com'
-// };
+interface User {
+  name: string;
+  age: number;
+  email: string;
+  address?: Address;
+}
 
-// type MangoType={
-//     name: string,
-//     age: number,
-//     email: string,
-//     address: string
-// }
+const mango: User = {
+  name: "Mango",
+  age: 30,
+  email: "john@example.com",
+  address: {
+    city: "New York",
+    country: "USA",
+  },
+};
 
-// type PolyType={name: string, age:number,
-//     email: string}
+const poly: User = {
+  name: "Mango",
+  age: 30,
+  email: "john@example.com",
+};
